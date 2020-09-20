@@ -3,7 +3,10 @@ package br.com.gels.devsuperior.dspesquisa.dto;
 import br.com.gels.devsuperior.dspesquisa.entities.Game;
 import br.com.gels.devsuperior.dspesquisa.entities.enums.Platform;
 
-public class GameDTO {
+import java.io.Serializable;
+
+public class GameDTO implements Serializable {
+    private static final long serialVersionUID =1L;
     private Long id;
     private String title;
     private Platform platform;
